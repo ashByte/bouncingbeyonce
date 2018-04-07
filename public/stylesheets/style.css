@@ -5,6 +5,8 @@ body {
   padding: 50px;
   font: 65px;
   font-family: Steelfish, sans-serif;
+  background-image: url("/imgs/space.gif");
+  background-repeat: repeat;
 }
 
 
