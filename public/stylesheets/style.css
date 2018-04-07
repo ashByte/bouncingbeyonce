@@ -1,7 +1,12 @@
+@font-face{
+  font-family: Steelfish; src: url('/fonts/steelfish.ttf');
+}
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 65px;
+  font-family: Steelfish, sans-serif;
 }
+
 
 /*Centering of title: css-tricks.com*/
 #title{
@@ -10,6 +15,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 65px;
 }
 
 div.a {
