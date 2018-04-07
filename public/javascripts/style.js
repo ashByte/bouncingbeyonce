@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event){
 function launchSpaceShip(){
   document.body.style.backgroundImage = "url('/imgs/space.gif')";
   document.body.style.color = "white";
+  document.getElementById("spaceMode").style.visibility = "hidden";
 
 }
 
