@@ -2,7 +2,11 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+div.a {
+  width: 150px;
+  height:300px;
+  position:fixed;
+}
 a {
   color: #00B7FF;
 }
