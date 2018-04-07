@@ -13,7 +13,10 @@ function launchSpaceShip(){
   document.body.style.backgroundImage = "url('/imgs/space.gif')";
   document.body.style.color = "white";
   document.getElementById("spaceMode").style.visibility = "hidden";
-
+  let audio = document.getElementById("music");
+  audio.src = "/audio/stars.mp3";
+  audio.currentTime = 0;
+  audio.play();
 }
 
 var allTheYonces = ['imgs/yonce1.png',
