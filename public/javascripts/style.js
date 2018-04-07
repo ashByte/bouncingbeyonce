@@ -17,6 +17,10 @@ function launchSpaceShip(){
   audio.src = "/audio/stars.mp3";
   audio.currentTime = 0;
   audio.play();
+
+  var element = document.getElementsByClassName("a");
+  element[0].classList.add("a_rotate");
+
 }
 
 var allTheYonces = ['imgs/yonce1.png',
