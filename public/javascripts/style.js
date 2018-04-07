@@ -1,6 +1,19 @@
 document.addEventListener("DOMContentLoaded", function(event){
   animateDiv();
+
+  document.getElementById("spaceMode").addEventListener("click", function(event){
+    launchSpaceShip();
+  });
+
 });
+
+
+
+function launchSpaceShip(){
+  document.body.style.backgroundImage = "url('/imgs/space.gif')";
+  document.body.style.color = "white";
+
+}
 
 var allTheYonces = ['imgs/yonce1.png',
   'imgs/yonce2.png',
@@ -36,6 +49,7 @@ function animateDiv(){
     });
 
 };
+
 
 function calcSpeed(prev, next) {
 
