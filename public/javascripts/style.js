@@ -37,9 +37,9 @@ function changeYonce(){
 function makeNewPosition(){
 
     var h = $(window).height() - 300;
-    var w = $(window).width() - 205;
+    var w = $(window).width() - 505;
 
-    var corners = [[0,-100],[h,w],[0,w],[h,-100]]
+    var corners = [[-100,-100],[h,w],[-100,w],[h,-150]]
     var randomCorner = Math.floor(Math.random() * 4);
 
     return corners[randomCorner];
