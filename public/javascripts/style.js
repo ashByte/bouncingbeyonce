@@ -2,6 +2,17 @@ document.addEventListener("DOMContentLoaded", function(event){
   animateDiv();
 });
 
+var allTheYonces = ['imgs/yonce1.png',
+  'imgs/yonce2.png',
+  'imgs/yonce3.png',
+  'imgs/yonce4.png', 'imgs/bey-transparent.png'];
+
+/*Gets a new Yonce*/
+function changeYonce(){
+  var newYonce = allTheYonces[Math.floor(Math.random() * 4)]
+  document.getElementById("yonce").src = newYonce;
+}
+
 function makeNewPosition(){
 
     var h = $(window).height() - 300;
@@ -16,6 +27,7 @@ function makeNewPosition(){
 
 function animateDiv(){
     var newq = makeNewPosition();
+    changeYonce();
     var oldq = $('.a').offset();
     var speed = calcSpeed([oldq.top, oldq.left], newq);
 
